@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Andrew Tam</title>
+  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <body>
+
+    <nav class ="navbar has-shadow is-white">
+      <div class ="navbar-brand">
+        <div class="navbar-item">
+        <a class="has-text-info is-size-4 has-text-weight-bold">
+          Andrew Tam
+          </a>
+          </div>
+
+          <div class ="navbar-item">
+            <a href = "https://github.com/AndrewSuiyinTam/AndrewSuiyinTam.github.io">
+              <img src = 'data:image/png;base64,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' class = "mt-2">
+              </a>
+            </div>
+
+            <div class ="navbar-item">
+              <a href = "https://www.linkedin.com/in/andrewsiuyintam/">
+                <img src = 'data:image/png;base64,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' class = "mt-2">
+                </a>
+              </div>
+
+              <div class ="navbar-item">
+                <a href = "https://www.linkedin.com/in/andrewsiuyintam/">
+                  <img src = 'data:image/png;base64,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' class = "mt-2 ml-2">
+                  </a>
+                </div>
+
+
+
+          <div class="navbar-item">
+
+            </div>
+
+        </div>
+
+        <div class="navbar-end">
+          <div class = "navbar-item">
+            <a class="is-size-5 has-text-blue">
+              About
+              </a>
+            </div>
+            <div class = "navbar-item">
+              <a class="is-size-5-desktop has-text-blue">
+                Experience
+                </a>
+              </div>
+              <div class = "navbar-item">
+                <a class="is-size-5-desktop has-text-blue">
+                  Contact
+                  </a>
+                </div>
+          </div>
+      </nav>
+
+      <!-- <div class="progress-bar">
+        <div class="progress-bar-inner">0%</div>
+        </div> -->
+        <div class ="progress-header">
+        <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
+
+      <section class="mt-6">
+        </section>
+
+
+      <section class = "section">
+        <div class ="container">
+        <h1 class = "title is-size-3 mt-6 ml-5 has-text-weight-bold">
+          Hey, I’m Andrew - A Software<br> Engineer from the Washington D.C Area.
+          </h1>
+          <h1 class = "subtitle is-size-4 ml-5 mt-2 ">
+            I develop and create features for user interfaces. I'm <br> currently working at a startup called Kiddo.us, where<br> I'm helping to improve the UI using various tools and technologies.
+            </h1>
+          <h2 class=" is-size-5 ml-5">
+            <a href= "resume.pdf ">Check out my resume</a>
+            </h2>
+
+            </div>
+        </section>
+
+
+
+          <h1 class="title is-size-2 has-text-centered has-text-primary-dark">Experience</h1>
+
+<div class = "columns">
+  <div class="column">
+  <div class="job-body">
+    <div class =" job-message mt-6 ml-6  ">
+
+    <article class="message ">
+<div class="message-header has-background-primary ">
+<p>Software Developer Intern @ Kiddo.us</p>
+
+</div>
+<div class="message-body">
+March 2021 - Present
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</article>
+</div>
+
+<div class="column is-half">
+<div class="job-body">
+  <div class =" job-message mt-6 ml-6  ">
+
+  <article class="message ">
+
+<div class="message-body">
+Helping to develop the UI for the landing page, as well as expansion of other features. Using HTML,Bulma, SCSS, and Javascript.
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</article>
+</div>
+
+</div>
+
+
+<div class = "columns">
+
+
+<div class="column is-half">
+<div class="job-body">
+  <div class =" job-message mt-6 ml-6  ">
+
+  <article class="message ">
+
+<div class="message-body">
+At this role, I assist with the installation and maintenance of classroom and learning space media systems. I work with system testing, cable termination, wall plate and connection jack mounting.
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</article>
+</div>
+
+<div class="column">
+<div class="job-body">
+  <div class =" job-message mt-6 ml-6  ">
+
+  <article class="message ">
+<div class="message-header has-background-link-dark ">
+<p>Media Systems Engineering Assistant @ Stony Brook University</p>
+
+</div>
+<div class="message-body">
+February 2021 - Present
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</article>
+</div>
+
+</div>
+
+<div class = "columns">
+  <div class="column">
+  <div class="job-body">
+    <div class =" job-message mt-6 ml-6  ">
+
+    <article class="message ">
+<div class="message-header has-background-info-dark ">
+<p>Frontend Developer Intern @ NYC Tax Commission</p>
+
+</div>
+<div class="message-body">
+June 2019 - August 2019
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</article>
+</div>
+
+<div class="column is-half">
+<div class="job-body">
+  <div class =" job-message mt-6 ml-6  ">
+
+  <article class="message ">
+
+<div class="message-body">
+While interning at this government agency, I worked on the intranet site using HTML, CSS, and Vanilla Javascript.
+ I worked on features such as creating form layouts and creating slideshow functionality.
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</article>
+</div>
+
+</div>
+
+
+<div class = "columns">
+
+
+<div class="column is-half">
+<div class="job-body">
+  <div class =" job-message mt-6 ml-6  ">
+
+  <article class="message ">
+
+<div class="message-body">
+Opened and staffed the undergraduate college center during the hours of operation. I worked to Assist and perform maintenance needs for students with technological needs.
+I also conducted the technological and layout set-up for campus events and performances.
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</article>
+</div>
+
+<div class="column">
+<div class="job-body">
+  <div class =" job-message mt-6 ml-6  ">
+
+  <article class="message ">
+<div class="message-header has-background-primary-dark ">
+<p>Events/Facilities Assistant @ Stony Brook University</p>
+
+</div>
+<div class="message-body">
+March 2019 - March 2020
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</article>
+</div>
+
+</div>
+
+
+
+<section class="projects">
+    <h1 class="title is-size-2 has-text-centered has-text-primary-dark">Projects</h1>
+
+    <div class="columns">
+    <div class="column">
+      <button id="project-1-button">
+      <img src ="https://i.ibb.co/CJtk8kK/Screen-Shot-2021-04-06-at-12-20-59-PM.png">
+      </button>
+    </div>
+    <div class="column">
+      <button id="project-2-button">
+      <img src="https://i.ibb.co/B4v3PTZ/Screen-Shot-2021-04-06-at-12-24-03-PM.png">
+      </button>
+    </div>
+    <div class="column">
+      <button id="project-3-button">
+      <img src ="https://i.ibb.co/CJtk8kK/Screen-Shot-2021-04-06-at-12-20-59-PM.png">
+      </button>
+    </div>
+    <div class="column">
+      <button id="project-4-button">
+      <img src="https://i.ibb.co/B4v3PTZ/Screen-Shot-2021-04-06-at-12-24-03-PM.png">
+      </button>
+    </div>
+    </div>
+
+
+  </section>
+
+
+<section>
+  <div class="modal ">
+    <div class="modal-background"></div>
+    <div class = "modal-content has-background-white py-5 px-5">
+        <img src ="https://i.ibb.co/CJtk8kK/Screen-Shot-2021-04-06-at-12-20-59-PM.png">
+      <h3 class ="title mb-6">Stock Analysis Project</h3>
+      <p>Stock Analysis project which takes technical
+indicators such as Volatilty and moving
+averages, to analyze and predict price movements.
+
+Technologies used: Python</p>
+    </div>
+
+
+    <div id="modal1" class="modal ">
+      <div class="modal-background"></div>
+      <div class = "modal-content has-background-white py-5 px-5">
+          <img src ="https://i.ibb.co/CJtk8kK/Screen-Shot-2021-04-06-at-12-20-59-PM.png">
+        <h3 class ="title mb-6">Stock Analysis Project</h3>
+        <p>Stock Analysis project which takes technical
+  indicators such as Volatilty and moving
+  averages, to analyze and predict price movements.
+
+  Technologies used: Python</p>
+      </div>
+
+
+
+      <div class="modal ">
+        <div class="modal-background"></div>
+        <div class = "modal-content has-background-white py-5 px-5">
+            <img src ="https://i.ibb.co/CJtk8kK/Screen-Shot-2021-04-06-at-12-20-59-PM.png">
+          <h3 class ="title mb-6">Stock Analysis Project</h3>
+          <p>Stock Analysis project which takes technical
+    indicators such as Volatilty and moving
+    averages, to analyze and predict price movements.
+
+    Technologies used: Python</p>
+        </div>
+
+        <div class="modal">
+          <div class="modal-background"></div>
+          <div class = "modal-content has-background-white py-5 px-5">
+              <img src ="https://i.ibb.co/CJtk8kK/Screen-Shot-2021-04-06-at-12-20-59-PM.png">
+            <h3 class ="title mb-6">Stock Analysis Project</h3>
+            <p>Stock Analysis project which takes technical
+      indicators such as Volatilty and moving
+      averages, to analyze and predict price movements.
+
+      Technologies used: Python</p>
+          </div>
+
+</div>
+
+</section>
+          <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                This page was built by me, <strong>Andrew Tam</strong>, using <strong> HTML, Bulma, and Javascript</strong>
+              </p>
+            </div>
+          </footer>
+
+
+
+
+  </body>
+  <script src="script.js"></script>
+</html>
